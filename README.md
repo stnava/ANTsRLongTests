@@ -32,4 +32,4 @@ system( source("test.R") )
 # test some stuff from beensetwd(testdir)
 system("git clone https://github.com/bkandel/antsASLProcessing.git")
 setwd("/tmp/antsASLProcessing")
-Rscript -e 'rmarkdown::render("Arterial-spin-labeling.Rmd")'
+rmarkdown::render("Arterial-spin-labeling.Rmd")
