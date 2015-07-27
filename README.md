@@ -30,6 +30,7 @@ setwd("/tmp/sccanTutorial")
 system( source("test.R") )
 
 # test some stuff from beensetwd(testdir)
+system( paste( "rm -r -f /tmp/antsASLProcessing" ) )
 system("git clone https://github.com/bkandel/antsASLProcessing.git")
 setwd("/tmp/antsASLProcessing")
 rmarkdown::render("Arterial-spin-labeling.Rmd")
